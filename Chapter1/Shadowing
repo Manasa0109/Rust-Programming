@@ -1,0 +1,14 @@
+fn main() {
+    let x = 10;
+    println!("Outer x: {}", x);
+
+    {
+        let x = 20; 
+        println!("Inner x (shadowed): {}", x);
+    }
+
+    println!("Back to Outer x: {}", x);
+
+    let x = x + 5; 
+    println!("Outer x after shadowing again: {}", x);
+}

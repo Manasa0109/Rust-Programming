@@ -1,0 +1,9 @@
+const PI: f64 = 3.1415;
+const MAX_USERS: u32 = 100;
+const COMPANY_NAME: &str = "OpenAI";
+
+fn main() {
+    println!("PI value: {}", PI);
+    println!("Max users allowed: {}", MAX_USERS);
+    println!("Company: {}", COMPANY_NAME);
+}

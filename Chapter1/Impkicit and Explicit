@@ -1,0 +1,43 @@
+fn main() {
+    
+    let a = 42;            
+    let b = 3.14;          
+    let c = true;          
+    let d = 'R';           
+    let e = "Hello";       
+    
+    // Compound types (implicit)
+    let f = (500, 6.4, 'z');       
+    let g = [1, 2, 3, 4, 5];      
+
+    println!("Implicit types:");
+    println!("a (i32): {}", a);
+    println!("b (f64): {}", b);
+    println!("c (bool): {}", c);
+    println!("d (char): {}", d);
+    println!("e (&str): {}", e);
+    println!("f (tuple): ({}, {}, {})", f.0, f.1, f.2);
+    println!("g (array): {:?}", g);
+
+    // b. Explicit type declaration
+    let x: i8 = -12;          // signed 8-bit int
+    let y: u32 = 1000;        // unsigned 32-bit int
+    let z: f32 = 2.5;         // 32-bit float
+    let flag: bool = false;   // boolean
+    let letter: char = 'Z';   // character
+    let name: &str = "Rust"; 
+
+    // Compound types (explicit)
+    let tup: (i64, f64, char) = (100000, 6.283, 'π');
+    let arr: [u8; 3] = [10, 20, 30];  // array of 3 u8 elements
+
+    println!("\nExplicit types:");
+    println!("x (i8): {}", x);
+    println!("y (u32): {}", y);
+    println!("z (f32): {}", z);
+    println!("flag (bool): {}", flag);
+    println!("letter (char): {}", letter);
+    println!("name (&str): {}", name);
+    println!("tup (tuple): ({}, {}, {})", tup.0, tup.1, tup.2);
+    println!("arr (array): {:?}", arr);
+}
