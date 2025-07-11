@@ -1,0 +1,9 @@
+fn main() {
+    let int_val: i32 = 10;
+    let float_val: f64 = int_val as f64; // type casting i32 to f64
+    println!("Integer: {}, Float after casting: {}", int_val, float_val);
+
+    let float_num = 15.75;
+    let int_num = float_num as i32; // casting float to int (truncates)
+    println!("Float: {}, Integer after casting: {}", float_num, int_num);
+}

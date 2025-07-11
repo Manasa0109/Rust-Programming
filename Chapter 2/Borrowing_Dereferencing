@@ -1,0 +1,8 @@
+fn main() {
+    let x = 42;
+    let ref_x = &x; // borrowing x
+
+    println!("Original value: {}", x);
+    println!("Borrowed reference: {}", ref_x);
+    println!("Dereferenced value: {}", *ref_x); // dereferencing the reference
+}
