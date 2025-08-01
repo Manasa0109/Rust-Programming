@@ -1,0 +1,10 @@
+fn pass_by_value(mut x: i32) {
+    x = 10; 
+    println!("Inside pass_by_value, x = {}", x);
+}
+fn main() {
+    let num = 5;
+    println!("Before pass_by_value, num = {}", num);
+    pass_by_value(num);  // Pass by value, num will not be modified
+    println!("After pass_by_value, num = {}", num);  // num remains unchanged
+}
